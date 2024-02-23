@@ -4,13 +4,13 @@ function Footer() {
   const [viewSelection, setViewSelection] = useState(false);
   const [language, setLanguage] = useState("English");
   return (
-    <div className="bg-black text-white px-5 pt-5 pb-2 desktop:p-20 desktop:pb-10">
+    <div className="bg-black text-white px-5 pt-5 pb-2 desktop:px-[4.5rem] desktop:pt-[4rem] desktop:pb-10">
       <div className="grid grid-cols-2 desktop:grid-cols-4 gap-[4rem] ">
         <div>
-          <h1 className="font-extrabold tracking-wide mb-3 desktop:text-[1.4rem]">
+          <h1 className="font-semibold tracking-wide mb-4 desktop:text-[1.1rem]">
             FOR ARTISTS
           </h1>
-          <ul className="leading-[1.4] desktop:text-[1.3rem]">
+          <ul className="leading-[2] desktop:text-[1rem]">
             <li>
               <a href="#" className="font-medium">
                 For Artists
@@ -34,10 +34,10 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h1 className="font-extrabold tracking-wide mb-3 desktop:text-[1.4rem]">
+          <h1 className="font-semibold tracking-wide mb-4 desktop:text-[1.1rem]">
             FOR FANS
           </h1>
-          <ul className="leading-[1.4] desktop:text-[1.3rem]">
+          <ul className="leading-[2] desktop:text-[1rem]">
             <li>
               <a href="#" className="font-medium">
                 For Fans
@@ -66,10 +66,10 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h1 className="font-extrabold tracking-wide mb-3 desktop:text-[1.4rem]">
+          <h1 className="font-semibold tracking-wide mb-4 desktop:text-[1.1rem]">
             OUR COMPANY
           </h1>
-          <ul className="leading-[1.4] desktop:text-[1.3rem]">
+          <ul className="leading-[2] desktop:text-[1rem]">
             <li>
               <a href="#" className="font-medium">
                 About Qrates
@@ -88,13 +88,13 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h1 className="font-extrabold tracking-wide mb-3 desktop:text-[1.4rem]">
+          <h1 className="font-semibold tracking-wide mb-4 desktop:text-[1.1rem]">
             HELP
           </h1>
-          <ul className="leading-[1.4] desktop:text-[1.3rem]">
+          <ul className="leading-[2] desktop:text-[1rem]">
             <li>
               <a href="#" className="font-medium">
-                Support
+                Support Center
               </a>
             </li>
             <li>

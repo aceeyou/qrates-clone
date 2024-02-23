@@ -62,7 +62,7 @@ function ArtistToolkit() {
           </li>
         </ul>
 
-        <a href="#" className="text-white font-semibold text-xl">
+        <a href="#" className="text-white font-medium text-xl">
           The latest from the Artist Toolkit ➜
         </a>
       </article>
