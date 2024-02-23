@@ -1,11 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: "Montserrat", system-ui, sans-serif;
+    /* font-family: "Montserrat", system-ui, sans-serif; */
+    font-family: "Inconsolata", monospace;
   }
 }
 
@@ -16,4 +18,21 @@
 li,
 a {
   cursor: pointer;
+}
+
+.hero__h1,
+.hero__h2 {
+  font-weight: 900;
+  font-size: clamp(4rem, 4vw, 7rem);
+}
+
+.hero__description {
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2vw, 5rem);
+}
+
+.hero__h2 {
+  font-style: sans-serif !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
