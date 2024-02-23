@@ -2,8 +2,8 @@
 
 function Hero() {
   return (
-    <div className="flex-col desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 max-w-[min(90%,1200px)] mx-auto items-center pb-[4rem]">
-      <div className="pb-3 desktop:flex-1 desktop:col-start-1 desktop:row-start-1 text-center desktop:text-start">
+    <div className="flex-col desktop:grid desktop:grid-cols-2 desktop:grid-rows-1 max-w-[min(90%,1300px)] mx-auto items-center pb-[.5rem]">
+      <div className=" desktop:flex-1 desktop:col-start-1 desktop:row-start-1 text-center desktop:text-start">
         <div className="leading-[1]">
           <h1 className="hero__h1">QRATES</h1>
           <h2 className="hero__h2 text-transparent">
@@ -11,7 +11,7 @@ function Hero() {
           </h2>
         </div>
         <div className="px-5 pt-4 hidden desktop:block desktop:px-0">
-          <h3 className="hero__description max-w-[600px] mx-auto desktop:mx-0 leading-8">
+          <h3 className="font-semibold text-2xl max-w-[580px] mx-auto desktop:mx-0 leading-8">
             We make it easy for artists to make vinyl and cassettes, so fans can
             keep pieces of the music they love ↓
           </h3>
@@ -41,8 +41,8 @@ function Hero() {
           QRATES
         </p>
       </figure>
-      <div className="px-5 pt-4 desktop:hidden">
-        <h3 className="hero__description text-center max-w-[600px] mx-auto">
+      <div className="px-5 pt-4 pb-12 desktop:pb-0 desktop:hidden">
+        <h3 className="font-semibold text-2xl max-w-[580px] mx-auto text-center desktop:mx-0 leading-8">
           We make it easy for artists to make vinyl and cassettes, so fans can
           keep pieces of the music they love ↓
         </h3>

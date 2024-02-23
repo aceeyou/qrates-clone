@@ -13,50 +13,50 @@ function ArtistToolkit() {
 
   return (
     <section
-      className="px-8 pt-12 pb-9 bg-cover bg-center desktop:px-[4rem]"
+      className="px-8 pt-12 pb-9 bg-cover bg-center desktop:px-[13rem]"
       style={{
         backgroundImage: `url('${arr[currHover]}')`,
         transition: "background ease-out 50ms",
       }}
     >
-      <p className="inline-block text-white font-semibold border-[3px] border-white px-3 py-1">
+      <p className="inline-block text-white text-xs font-semibold border-[3px] border-white px-3 py-1">
         ARTIST TOOLKIT
       </p>
       <article>
         <h1 className="sr-only">For Fans Discover Menu</h1>
-        <ul className="flex-col leading-[1.15] mt-[50px] mb-[70px] desktop:leading-[.9] desktop:mt-5 desktop:mb-[220px]">
+        <ul className="flex-col leading-[1.15]  mt-[50px] mb-[70px] desktop:leading-[1.2] desktop:mt-5 desktop:mb-[220px]">
           <li
             onMouseOver={() => setCurrHover(1)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2rem] desktop:text-[3rem] w-max text-white font-bold hover:underline underline-offset-4 decoration-4"
           >
             Vinyl Knowledge
           </li>
           <li
             onMouseOver={() => setCurrHover(2)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2rem] tracking-tighter desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2rem] tracking-tighter desktop:text-[3rem] w-max text-white font-bold hover:underline underline-offset-4 decoration-4"
           >
             Distribution and Promotion
           </li>
           <li
             onMouseOver={() => setCurrHover(3)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2rem] desktop:text-[3rem] w-max text-white font-bold hover:underline underline-offset-4 decoration-4"
           >
             Mixing and Mastering
           </li>
           <li
             onMouseOver={() => setCurrHover(4)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2rem] desktop:text-[3rem] w-max text-white font-bold hover:underline underline-offset-4 decoration-4"
           >
             Inspiration
           </li>
           <li
             onMouseOver={() => setCurrHover(5)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2.3rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2.3rem] desktop:text-[3rem] w-max text-white font-bold hover:underline underline-offset-4 decoration-4"
           >
             Qrates Tips
           </li>

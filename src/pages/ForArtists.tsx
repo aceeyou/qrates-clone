@@ -2,7 +2,7 @@ import React from "react";
 
 function ForArtists() {
   return (
-    <section className="bg-[#fff804] flex-col px-5 py-9 desktop:grid desktop:grid-cols-[1fr,1.6fr] desktop:items-center desktop:px-8 gap-10">
+    <section className="bg-[#fff804] flex-col px-5 py-9 desktop:grid desktop:grid-cols-[1fr,1.2fr] desktop:items-center desktop:px-8 gap-10">
       <div className="ml-auto">
         <figure className="relative pt-[20px] mb-[3rem] mx-auto desktop:m-0 max-w-[500px] desktop:max-w-[550px] desktop:inline-block ">
           <img
@@ -19,15 +19,15 @@ function ForArtists() {
           </figcaption>
         </figure>
       </div>
-      <div className=" desktop:flex-col desktop:justify-items-center justify-center">
-        <p className="inline-block bg-white text-slate-900 font-bold border-[2px] border-black px-3 py-1">
+      <div className=" desktop:flex-col desktop:justify-items-center justify-center desktop:-translate-y-4">
+        <p className="inline-block bg-white text-slate-900 font-semibold text-sm  border-[2px] border-black px-3 py-1">
           FOR ARTISTS
         </p>
         <article>
-          <h1 className="font-extrabold text-[2.25rem] leading-[1] mt-5 mb-6 max-w-[600px] desktop:mt-7 desktop:mb-8">
+          <h1 className="font-semibold text-[2.25rem] leading-[1] my-7 max-w-[600px] desktop:mt-7 desktop:mb-8">
             Your music on vinyl and cassette, direct to your fans.
           </h1>
-          <p className="text-[1.55rem] leading-[1.1] font-semibold desktop:max-w-[800px] desktop:text-[1.68rem]">
+          <p className="text-[1.55rem] leading-[1.1] font-medium desktop:max-w-[800px] desktop:text-[1.68rem]">
             Qrates is a one-stop platform for your vinyl record and cassette
             production, logistics, sales, and distribution. We take away the
             burden of hassle, cost, and risk, and return more time and revenue

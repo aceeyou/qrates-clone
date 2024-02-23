@@ -143,10 +143,10 @@ function Footer() {
       {
         //
       }
-      <div className="desktop:flex justify-between items-center mt-[180px]">
+      <div className="desktop:flex justify-between items-center mt-[280px] pb-7">
         <div>
           <img
-            className="w-full desktop:w-[330px]"
+            className="w-full desktop:w-[380px]"
             src="https://assets.qrates.com/packs/media/logos/qrates-logo-footer-498fa5b7.svg"
             alt="qrates logo"
           />
@@ -212,21 +212,30 @@ function Footer() {
           }
           <div className="flex-col desktop:flex-row desktop:w-[470px]">
             <div className="flex justify-between my-3 desktop:mb-0">
-              <a href="" className="text-[.84rem] font-semibold">
+              <a
+                href=""
+                className="text-[.84rem] desktop:text-[0.77rem] font-semibold"
+              >
                 Terms of Service
               </a>
-              <a href="" className="text-[.84rem] font-semibold">
+              <a
+                href=""
+                className="text-[.84rem] desktop:text-[0.77rem] font-semibold"
+              >
                 Privacy Policy
               </a>
-              <a href="" className="text-[.84rem] font-semibold">
+              <a
+                href=""
+                className="text-[.84rem] desktop:text-[0.77rem] font-semibold"
+              >
                 Legal Information
               </a>
-              <p className="hidden font-bold text-[.9rem] text-center desktop:inline desktop:ml-5 ">
+              <p className="hidden font-semibold text-[.9rem] desktop:text-[0.77rem] text-center desktop:inline desktop:ml-5 ">
                 © TDMS Inc.
               </p>
             </div>
 
-            <p className="font-bold text-[.9rem] text-center desktop:hidden">
+            <p className="font-semibold text-[.9rem] desktop:text-[0.77rem] text-center desktop:hidden">
               © TDMS Inc.
             </p>
           </div>
