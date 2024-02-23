@@ -124,7 +124,7 @@ function Footer() {
           href=""
           className="bg-white inline-block w-[37px] h-[36px] text-center rounded-full "
         >
-          <box-icon type="logo" size="md" name="facebook-circle"></box-icon>
+          <box-icon type="logo" size="md" name="facebook"></box-icon>
         </a>
         <a
           href=""
@@ -191,7 +191,7 @@ function Footer() {
               href=""
               className="bg-white inline-block w-[37px] h-[36px] text-center rounded-full "
             >
-              <box-icon type="logo" size="md" name="facebook-circle"></box-icon>
+              <box-icon type="logo" size="md" name="facebook"></box-icon>
             </a>
             <a
               href=""

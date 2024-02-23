@@ -24,11 +24,11 @@ function ArtistToolkit() {
       </p>
       <article>
         <h1 className="sr-only">For Fans Discover Menu</h1>
-        <ul className="flex-col leading-[.9] mt-[50px] mb-[70px] desktop:leading-[.9] desktop:mt-5 desktop:mb-[220px]">
+        <ul className="flex-col leading-[1.15] mt-[50px] mb-[70px] desktop:leading-[.9] desktop:mt-5 desktop:mb-[220px]">
           <li
             onMouseOver={() => setCurrHover(1)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2.3rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
           >
             Vinyl Knowledge
           </li>
@@ -42,14 +42,14 @@ function ArtistToolkit() {
           <li
             onMouseOver={() => setCurrHover(3)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2.3rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
           >
             Mixing and Mastering
           </li>
           <li
             onMouseOver={() => setCurrHover(4)}
             onMouseOut={() => setCurrHover(0)}
-            className="text-[2.3rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
+            className="text-[2rem] desktop:text-[4rem] w-max text-white font-extrabold hover:underline underline-offset-4 decoration-4"
           >
             Inspiration
           </li>
@@ -62,7 +62,7 @@ function ArtistToolkit() {
           </li>
         </ul>
 
-        <a href="#" className="text-white font-bold text-xl">
+        <a href="#" className="text-white font-semibold text-xl">
           The latest from the Artist Toolkit ➜
         </a>
       </article>

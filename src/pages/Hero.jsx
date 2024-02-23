@@ -36,7 +36,7 @@ function Hero() {
           alt="hand in a okay sign"
         />
         <figcaption className="sr-only">Man holding a vinyl record</figcaption>
-        <p className="absolute font-extrabold text-lg rotate-90 -right-[110px] top-[55%] text-[.85rem]">
+        <p className="absolute font-extrabold text-lg rotate-90 -right-[115px] top-[55%] text-[.85rem]">
           <span className="underline underline-offset-4">MAYAEWK</span> IS ON
           QRATES
         </p>

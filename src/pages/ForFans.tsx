@@ -23,7 +23,7 @@ function ForFans() {
       </p>
       <article>
         <h1 className="sr-only">For Fans Discover Menu</h1>
-        <ul className="flex-col leading-[.9] mt-[50px] mb-[70px] desktop:leading-[.9] desktop:mt-5 desktop:mb-[220px]">
+        <ul className="flex-col leading-[1.15] mt-[50px] mb-[70px] desktop:leading-[.9] desktop:mt-5 desktop:mb-[220px]">
           <li
             onMouseOver={() => setCurrHover(1)}
             onMouseOut={() => setCurrHover(0)}
@@ -54,7 +54,7 @@ function ForFans() {
           </li>
         </ul>
 
-        <a href="#" className="text-white font-bold text-xl">
+        <a href="#" className="text-white font-semibold text-[1.15rem]">
           The latest from the Qrates Community ➜
         </a>
       </article>

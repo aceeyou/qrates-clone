@@ -1,10 +1,11 @@
 import "boxicons";
 import { useState } from "react";
 
-function Navigation() {
+function Navigation({ mobileMenuToggle, setMobileMenuToggle }) {
   const [submenuToggle, setSubmenuToggle] = useState(false);
+  const [mobileSubMenuToggle, setMobileSubMenuToggle] = useState(false);
   return (
-    <nav className="flex flex-row items-center">
+    <nav className="flex flex-row items-center z-50">
       <div>
         <img
           src="https://assets.qrates.com/packs/media/logos/qrates-logo-6b1bd403.svg"
@@ -64,7 +65,10 @@ function Navigation() {
               <box-icon name="cart"></box-icon>
               <span className="sr-only">Cart</span>
             </li>
-            <li className="flex items-center text-[30px]">
+            <li
+              onClick={() => setMobileMenuToggle((b) => !b)}
+              className="flex items-center text-[30px]"
+            >
               <box-icon name="menu" size="md"></box-icon>
               <span className="sr-only">Menu</span>
             </li>
@@ -80,6 +84,96 @@ function Navigation() {
           >
             MAKE YOUR OWN
           </a>
+        </div>
+      </div>
+
+      {
+        // mobile menu view
+      }
+      <div
+        className={`${
+          mobileMenuToggle ? "scale-y-auto" : "scale-y-0"
+        } overflow-hidden origin-top fixed top-20 left-0 right-0 bottom-0 p-5 bg-white z-50 transition-transform ease-in-out duration-200`}
+      >
+        <ul>
+          <li
+            onClick={() => setMobileSubMenuToggle((c) => !c)}
+            className="relative font-extrabold text-2xl flex items-center mr-[30px] overflow-visible "
+          >
+            DISCOVER MUSIC{" "}
+            <span
+              className={`ml-[3px] flex items-center ${
+                mobileSubMenuToggle && "-rotate-180"
+              } transition duration-200`}
+            >
+              <box-icon name="chevron-down"></box-icon>
+            </span>
+          </li>
+          <li
+            className={`pl-4  ${
+              mobileSubMenuToggle ? "h-auto block" : "h-0 hidden"
+            } origin-top transition-[height] duration-200`}
+          >
+            <div className={`transition-all duration-150 my-2`}>
+              <ul>
+                <li className="mb-2 font-bold text-xl">Records</li>
+                <li className="mb-2 font-bold text-xl">Cassettes</li>
+                <li className="mb-2 font-bold text-xl">Stories</li>
+                <li className="text-nowrap font-bold text-xl">
+                  Qrates Curated
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li className="font-extrabold text-2xl my-5">
+            <a href="#">FOR ARTISTS</a>
+          </li>
+          <li className="font-extrabold text-2xl">
+            <a href="#">FOR FANS</a>
+          </li>
+        </ul>
+        <div className="my-6">
+          <a
+            href=""
+            className="bg-black inline-block w-[37px] h-[36px] text-center rounded-full "
+          >
+            <box-icon
+              type="logo"
+              color="white"
+              size="md"
+              name="facebook"
+            ></box-icon>
+          </a>
+          <a
+            href=""
+            className="bg-black inline-block w-[37px] h-[36px] text-center rounded-full mx-2"
+          >
+            <box-icon
+              type="logo"
+              color="white"
+              size="md"
+              name="instagram"
+            ></box-icon>
+          </a>
+          <a
+            href=""
+            className="bg-black inline-block w-[37px] h-[36px] text-center rounded-full"
+          >
+            <box-icon
+              type="logo"
+              color="white"
+              size="md"
+              name="twitter"
+            ></box-icon>
+          </a>
+        </div>
+        <div className="">
+          <button className="w-full py-3 text-md mb-2 bg-black text-white font-extrabold rounded-full">
+            MAKE A RECORD
+          </button>
+          <button className="w-full py-3 text-md font-extrabold rounded-full border-2 border-black">
+            LOG IN
+          </button>
         </div>
       </div>
     </nav>
